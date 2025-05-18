@@ -1,0 +1,17 @@
+<!-- res/drawable/rectangle_green_white_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer White Border -->
+    <item>
+        <shape>
+            <stroke android:width="4dp" android:color="#FFFFFF" /> <!-- White border -->
+            <corners android:radius="8dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+    <!-- Inner Green Border -->
+    <item>
+        <shape>
+            <stroke android:width="2dp" android:color="#678b25" /> <!-- Green border -->
+            <corners android:radius="8dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+</layer-list>

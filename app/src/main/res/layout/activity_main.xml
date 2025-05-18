@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/back">
+
+    <!-- Search Devices Button (Full Width) -->
+
+
+    <Button
+        android:id="@+id/seachDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Devices"
+        android:backgroundTint="#678b25"
+        android:layout_marginBottom="5dp" />
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#678b25"
+        android:layout_marginBottom="5dp" />
+
+    <!-- Horizontal Layout to Split Screen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <!-- Left Screen (Connected Device) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/connectedDeviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connected Device: None"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp" />
+            <ListView
+                android:id="@+id/deviceList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Vertical Divider -->
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#678b25"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Right Screen (List of Devices) -->
+
+        <!-- Right Screen (Connected Devices) -->
+        <LinearLayout
+            android:id="@+id/rightScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!-- TextView to display the heading -->
+            <TextView
+                android:id="@+id/connectedDevicesHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connected Devices"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp" />
+
+            <!-- ListView to display the connected devices -->
+            <ListView
+                android:id="@+id/connectedDeviceList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp" />
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Connect and Clear Values Buttons at Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/connectToDevice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Connect"
+            android:backgroundTint="#6D922B"
+            android:enabled="false"
+            android:layout_marginEnd="5dp" />
+        <Button
+            android:id="@+id/disconnectButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Disconnect"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:visibility="gone"
+            android:backgroundTint="#678b25"
+            android:layout_marginStart="5dp"/>
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear Values"
+            android:backgroundTint="#678b25"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

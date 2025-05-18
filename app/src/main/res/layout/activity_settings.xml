@@ -1,0 +1,235 @@
+<!-- res/layout/activity_settings.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- ScrollView to make the content scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+
+
+            <!-- Subtitle: Commands -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Commands/characters sent to the car:"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:background="#678b25"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+            <!-- Commands List -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forward -> F"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back -> B"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Left -> L"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Right -> R"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forward Left -> G"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forward Right -> I"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back Left -> H"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back Right -> J"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop -> S"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <!-- Subtitle: Speed Settings -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed Settings"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:background="#678b25"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+            <!-- Speed Settings List -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 0 -> 0 (zero)"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 10 -> 1"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 20 -> 2"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 30 -> 3"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 40 -> 4"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 50 -> 5"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 60 -> 6"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 70 -> 7"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 80 -> 8"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 90 -> 9"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed 100 -> q"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+
+            <!-- Stop Command -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop All -> D"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+            <!-- Button at the bottom -->
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:background="#678b25"
+                android:backgroundTint="#678b25"
+                android:drawableTint="#678b25"
+                android:padding="2dp"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

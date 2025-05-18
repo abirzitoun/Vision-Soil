@@ -1,0 +1,21 @@
+<!-- res/drawable/seekbar_progress_green_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background with border -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#E0E0E0" /> <!-- Background color (gray) -->
+            <stroke android:width="2dp" android:color="#678b25" /> <!-- Border color (green) -->
+            <corners android:radius="8dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+    <!-- Progress with border -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#678b25" /> <!-- Progress color (green) -->
+                <stroke android:width="2dp" android:color="#00FF00" /> <!-- Border color (green) -->
+                <corners android:radius="8dp" /> <!-- Rounded corners -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>
