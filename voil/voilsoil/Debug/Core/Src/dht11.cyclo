@@ -1,6 +1,0 @@
-../Core/Src/dht11.c:9:6:DHT11_Begin	1
-../Core/Src/dht11.c:17:9:DHT11_Read	10
-../Core/Src/dht11.c:97:9:DHT11_Parser	3
-../Core/Src/dht11.c:120:6:DHT11_ConfigPin	2
-../Core/Src/dht11.c:133:6:DHT11_Delay_Us	2
-../Core/Src/dht11.c:139:9:DHT11_Expect_Pulse	3

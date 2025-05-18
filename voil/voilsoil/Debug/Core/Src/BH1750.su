@@ -1,4 +1,0 @@
-../Core/Src/BH1750.c:5:6:BH1750_init	8	static
-../Core/Src/BH1750.c:11:6:BH1750_write	24	static
-../Core/Src/BH1750.c:16:10:BH1750_read_data	24	static
-../Core/Src/BH1750.c:28:11:BH1750_Lumen	24	static
