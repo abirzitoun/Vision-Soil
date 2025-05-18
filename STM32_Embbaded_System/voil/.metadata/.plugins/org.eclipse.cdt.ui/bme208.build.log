@@ -1,0 +1,10 @@
+01:45:48 **** Incremental Build of configuration Debug for project bme208 ****
+make -j12 all 
+arm-none-eabi-size  bme208.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20672	    108	   2116	  22896	   5970	bme208.elf
+Finished building: default.size.stdout
+ 
+
+01:45:48 Build Finished. 0 errors, 0 warnings. (took 239ms)
+
