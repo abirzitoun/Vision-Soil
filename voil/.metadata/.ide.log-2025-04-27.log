@@ -1,0 +1,47 @@
+2025-04-28 00:07:44,951 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:44,956 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:44,971 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:44,971 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:44,971 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:44,972 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:45,007 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:45,008 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:45,008 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:45,008 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:51,696 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 777909144 Bytes (1073741824)
+2025-04-28 00:07:52,742 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 788049288 Bytes (1073741824)
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-04-28 00:07:52,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-04-28 00:07:52,883 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2025-04-28 00:07:52,903 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:52,903 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-04-28 00:07:53,008 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\MXTmpFiles\license.tmp_save
+2025-04-28 00:07:53,120 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\MXTmpFiles\license.tmp
+2025-04-28 00:07:53,139 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\MXTmpFiles\gpio.tmp_save
+2025-04-28 00:07:53,209 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\MXTmpFiles\gpio.tmp
+2025-04-28 00:07:53,387 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Src\stm32f4xx_it.c_save
+2025-04-28 00:07:53,573 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Src\stm32f4xx_it.c
+2025-04-28 00:07:53,577 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Inc\stm32f4xx_it.h_save
+2025-04-28 00:07:53,632 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Inc\stm32f4xx_it.h
+2025-04-28 00:07:53,641 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Src\stm32f4xx_hal_msp.c_save
+2025-04-28 00:07:53,738 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Src\stm32f4xx_hal_msp.c
+2025-04-28 00:07:53,742 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\MXTmpFiles\system.tmp_save
+2025-04-28 00:07:53,787 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\MXTmpFiles\system.tmp
+2025-04-28 00:07:53,795 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-04-28 00:07:53,847 [INFO] CodeEngine:335 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Inc\stm32f4xx_hal_conf.h
+2025-04-28 00:07:53,875 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Inc\main.h_save
+2025-04-28 00:07:53,935 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Inc\main.h
+2025-04-28 00:07:53,939 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Src\main.c_save
+2025-04-28 00:07:54,035 [INFO] CodeEngine:279 - Generated code: C:\Users\hamzaca\Desktop\voil\voilsoil\Core\Src\main.c
+2025-04-28 00:07:54,287 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 107mS.
+2025-04-28 00:07:54,289 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2025-04-28 00:07:54,365 [INFO] ConfigFileManager:1531 - The Die is : DIE413
+2025-04-28 00:07:55,103 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 814mS.
+2025-04-28 00:07:55,104 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2025-04-28 00:07:55,106 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
