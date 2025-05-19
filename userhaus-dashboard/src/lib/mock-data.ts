@@ -1,0 +1,322 @@
+
+import { Robot, Farm, User, SensorData, DashboardStats } from "./types";
+
+// Mock Robots
+export const mockRobots: Robot[] = [
+  {
+    id: "r1",
+    name: "Agri-Bot 2000",
+    farmId: "f1",
+    farmName: "Green Valley Farm",
+    engineerId: "u2",
+    engineerName: "Marcus Chen",
+    status: "available",
+    connectivity: "online",
+    lastActive: "2023-08-15T10:30:00Z",
+    batteryLevel: 85,
+  },
+  {
+    id: "r2",
+    name: "Soil Master X1",
+    farmId: "f2",
+    farmName: "Sunset Fields",
+    engineerId: "u3",
+    engineerName: "Priya Sharma",
+    status: "in-use",
+    connectivity: "online",
+    lastActive: "2023-08-15T11:45:00Z",
+    batteryLevel: 62,
+  },
+  {
+    id: "r3",
+    name: "Harvest Helper Pro",
+    farmId: "f3",
+    farmName: "Golden Acre Farm",
+    engineerId: "u2",
+    engineerName: "Marcus Chen",
+    status: "maintenance",
+    connectivity: "offline",
+    lastActive: "2023-08-14T09:15:00Z",
+    batteryLevel: 24,
+  },
+  {
+    id: "r4",
+    name: "Field Scout A7",
+    farmId: null,
+    farmName: null,
+    engineerId: null,
+    engineerName: null,
+    status: "available",
+    connectivity: "online",
+    lastActive: "2023-08-15T08:20:00Z",
+    batteryLevel: 92,
+  },
+  {
+    id: "r5",
+    name: "Crop Monitor Elite",
+    farmId: "f1",
+    farmName: "Green Valley Farm",
+    engineerId: "u3",
+    engineerName: "Priya Sharma",
+    status: "in-use",
+    connectivity: "online",
+    lastActive: "2023-08-15T12:10:00Z",
+    batteryLevel: 73,
+  }
+];
+
+// Mock Farms
+export const mockFarms: Farm[] = [
+  {
+    id: "f1",
+    name: "Green Valley Farm",
+    location: "Napa County, California",
+    gpsCoordinates: {
+      latitude: 38.5025,
+      longitude: -122.2654,
+    },
+    farmerId: "u4",
+    farmerName: "John Peterson",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
+    robotCount: 2,
+    status: "active",
+    createdAt: "2023-01-15T08:00:00Z",
+  },
+  {
+    id: "f2",
+    name: "Sunset Fields",
+    location: "Sonoma County, California",
+    gpsCoordinates: {
+      latitude: 38.291,
+      longitude: -122.4579,
+    },
+    farmerId: "u5",
+    farmerName: "Linda Thompson",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
+    robotCount: 1,
+    status: "active",
+    createdAt: "2023-02-20T10:15:00Z",
+  },
+  {
+    id: "f3",
+    name: "Golden Acre Farm",
+    location: "Sacramento County, California",
+    gpsCoordinates: {
+      latitude: 38.5816,
+      longitude: -121.4944,
+    },
+    farmerId: "u6",
+    farmerName: "Robert Garcia",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
+    robotCount: 1,
+    status: "inactive",
+    createdAt: "2023-03-05T14:30:00Z",
+  }
+];
+
+// Mock Users
+export const mockUsers: User[] = [
+  {
+    id: "u1",
+    firstName: "Admin",
+    lastName: "User",
+    email: "admin@visionsoil.com",
+    phone: "+1-555-123-4567",
+    role: "admin",
+    status: "active",
+    profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+    createdAt: "2022-12-01T09:00:00Z",
+  },
+  {
+    id: "u2",
+    firstName: "Marcus",
+    lastName: "Chen",
+    email: "marcus@visionsoil.com",
+    phone: "+1-555-234-5678",
+    role: "engineer",
+    status: "active",
+    profileImage: "https://randomuser.me/api/portraits/men/2.jpg",
+    createdAt: "2023-01-10T11:30:00Z",
+  },
+  {
+    id: "u3",
+    firstName: "Priya",
+    lastName: "Sharma",
+    email: "priya@visionsoil.com",
+    phone: "+1-555-345-6789",
+    role: "engineer",
+    status: "active",
+    profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+    createdAt: "2023-01-15T13:45:00Z",
+  },
+  {
+    id: "u4",
+    firstName: "John",
+    lastName: "Peterson",
+    email: "john@greenvally.com",
+    phone: "+1-555-456-7890",
+    role: "farmer",
+    status: "active",
+    profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+    createdAt: "2023-01-20T10:15:00Z",
+  },
+  {
+    id: "u5",
+    firstName: "Linda",
+    lastName: "Thompson",
+    email: "linda@sunsetfields.com",
+    phone: "+1-555-567-8901",
+    role: "farmer",
+    status: "active",
+    profileImage: "https://randomuser.me/api/portraits/women/5.jpg",
+    createdAt: "2023-02-25T09:30:00Z",
+  },
+  {
+    id: "u6",
+    firstName: "Robert",
+    lastName: "Garcia",
+    email: "robert@goldenacre.com",
+    phone: "+1-555-678-9012",
+    role: "farmer",
+    status: "active",
+    profileImage: "https://randomuser.me/api/portraits/men/6.jpg",
+    createdAt: "2023-03-10T14:00:00Z",
+  },
+  {
+    id: "u7",
+    firstName: "Sophia",
+    lastName: "Liu",
+    email: "sophia@visionsoil.com",
+    phone: "+1-555-789-0123",
+    role: "engineer",
+    status: "pending_approval",
+    profileImage: "https://randomuser.me/api/portraits/women/7.jpg",
+    createdAt: "2023-08-10T16:30:00Z",
+  },
+  {
+    id: "u8",
+    firstName: "David",
+    lastName: "Johnson",
+    email: "david@visionsoil.com",
+    phone: "+1-555-890-1234",
+    role: "engineer",
+    status: "pending_approval",
+    profileImage: "https://randomuser.me/api/portraits/men/8.jpg",
+    createdAt: "2023-08-12T15:45:00Z",
+  }
+];
+
+// Mock Sensor Data
+export const mockSensorData: SensorData[] = [
+  {
+    id: "s1",
+    farmId: "f1",
+    farmName: "Green Valley Farm",
+    robotId: "r1",
+    robotName: "Agri-Bot 2000",
+    sensorType: "temperature",
+    value: 24.5,
+    unit: "°C",
+    timestamp: "2023-08-15T10:30:00Z",
+  },
+  {
+    id: "s2",
+    farmId: "f1",
+    farmName: "Green Valley Farm",
+    robotId: "r1",
+    robotName: "Agri-Bot 2000",
+    sensorType: "humidity",
+    value: 68,
+    unit: "%",
+    timestamp: "2023-08-15T10:30:00Z",
+  },
+  {
+    id: "s3",
+    farmId: "f1",
+    farmName: "Green Valley Farm",
+    robotId: "r1",
+    robotName: "Agri-Bot 2000",
+    sensorType: "soil_ph",
+    value: 6.8,
+    unit: "pH",
+    timestamp: "2023-08-15T10:30:00Z",
+  },
+  {
+    id: "s4",
+    farmId: "f1",
+    farmName: "Green Valley Farm",
+    robotId: "r1",
+    robotName: "Agri-Bot 2000",
+    sensorType: "light",
+    value: 850,
+    unit: "lux",
+    timestamp: "2023-08-15T10:30:00Z",
+  },
+  {
+    id: "s5",
+    farmId: "f2",
+    farmName: "Sunset Fields",
+    robotId: "r2",
+    robotName: "Soil Master X1",
+    sensorType: "temperature",
+    value: 26.2,
+    unit: "°C",
+    timestamp: "2023-08-15T11:45:00Z",
+  },
+  {
+    id: "s6",
+    farmId: "f2",
+    farmName: "Sunset Fields",
+    robotId: "r2",
+    robotName: "Soil Master X1",
+    sensorType: "humidity",
+    value: 62,
+    unit: "%",
+    timestamp: "2023-08-15T11:45:00Z",
+  },
+  {
+    id: "s7",
+    farmId: "f2",
+    farmName: "Sunset Fields",
+    robotId: "r2",
+    robotName: "Soil Master X1",
+    sensorType: "soil_ph",
+    value: 7.2,
+    unit: "pH",
+    timestamp: "2023-08-15T11:45:00Z",
+  },
+  {
+    id: "s8",
+    farmId: "f2",
+    farmName: "Sunset Fields",
+    robotId: "r2",
+    robotName: "Soil Master X1",
+    sensorType: "light",
+    value: 920,
+    unit: "lux",
+    timestamp: "2023-08-15T11:45:00Z",
+  }
+];
+
+// Dashboard Stats
+export const mockDashboardStats: DashboardStats = {
+  totalFarms: 3,
+  activeFarms: 2,
+  totalRobots: 5,
+  totalEngineers: 3,
+  totalFarmers: 3,
+  robotStatusDistribution: {
+    available: 2,
+    inUse: 2,
+    maintenance: 1,
+  },
+};
+
+// Helper function to simulate API calls
+export function fetchWithDelay<T>(data: T, delay = 500): Promise<T> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(data);
+    }, delay);
+  });
+}
