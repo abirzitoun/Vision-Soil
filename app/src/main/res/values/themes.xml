@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.VisionSoil" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#678b25</item> <!-- Set primary color -->
+        <item name="colorButtonNormal">#678b25</item> <!-- Set button background -->
+    </style>
+
+    <style name="Theme.VisionSoil" parent="Base.Theme.VisionSoil" />
+</resources>

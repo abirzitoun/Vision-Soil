@@ -1,0 +1,7 @@
+<!-- res/drawable/green_square.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"> <!-- Use rectangle for a square shape -->
+    <solid android:color="#678b25" /> <!-- Green color -->
+    <size android:width="54dp" android:height="54dp" />
+    <!-- Size of the square -->
+</shape>

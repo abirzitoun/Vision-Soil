@@ -1,0 +1,219 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlleRrobot"
+    android:background="@drawable/back">
+
+    <!-- LinearLayout for LED and squares -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LED Indicator ImageView -->
+        <ImageView
+            android:id="@+id/ledIndicator"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="LED Indicator"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circle_led_off" />
+
+        <!-- Add 5 square green views using ImageView -->
+        <ImageView
+            android:id="@+id/sound"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/alert"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/square"
+            android:foreground="@drawable/warning"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/connect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:foreground="@drawable/baseline_hub_24"
+            android:scaleType="fitCenter"
+            android:src="@drawable/square" />
+
+        <ImageView
+            android:id="@+id/streaming"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"  />
+
+    </LinearLayout>
+
+    <!-- Container for 4 rectangles -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ripple_effect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <!-- Top-Left Rectangle -->
+        <View
+            android:id="@+id/rectangleTopLeft"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rectangle_green_white_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rectangleBottomLeft"
+            app:layout_constraintVertical_weight="1" />
+        <ImageView
+            android:id="@+id/circleTopLeft"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/circle_green_border"
+            app:layout_constraintTop_toTopOf="@id/rectangleTopLeft"
+            app:layout_constraintBottom_toBottomOf="@id/rectangleTopLeft"
+            app:layout_constraintStart_toStartOf="@id/rectangleTopLeft"
+            app:layout_constraintEnd_toEndOf="@id/rectangleTopLeft" />
+
+        <ImageView
+            android:id="@+id/arrowUpTopLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_arrow_upward_24"
+            app:layout_constraintTop_toTopOf="@id/circleTopLeft"
+            app:layout_constraintBottom_toBottomOf="@id/circleTopLeft"
+            app:layout_constraintStart_toStartOf="@id/circleTopLeft"
+            app:layout_constraintEnd_toEndOf="@id/circleTopLeft" />
+
+        <!-- Space between Top-Left and Top-Right Rectangles -->
+        <!-- SpaceTop Rectangle -->
+        <WebView
+            android:id="@+id/spaceTop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/rectangle_green_white_border"
+            app:layout_constraintStart_toEndOf="@id/rectangleTopLeft"
+            app:layout_constraintEnd_toStartOf="@id/rectangleTopRight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+        <!-- Small Center Rectangle -->
+
+        <!-- Top-Right Rectangle -->
+        <View
+            android:id="@+id/rectangleTopRight"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rectangle_green_white_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rectangleBottomRight"
+            app:layout_constraintVertical_weight="1" />
+        <ImageView
+            android:id="@+id/circleTopRight"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/circle_green_border"
+            app:layout_constraintTop_toTopOf="@id/rectangleTopRight"
+            app:layout_constraintBottom_toBottomOf="@id/rectangleTopRight"
+            app:layout_constraintStart_toStartOf="@id/rectangleTopRight"
+            app:layout_constraintEnd_toEndOf="@id/rectangleTopRight" />
+
+        <ImageView
+            android:id="@+id/arrowUpTopRight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:layout_constraintTop_toTopOf="@id/circleTopRight"
+            app:layout_constraintBottom_toBottomOf="@id/circleTopRight"
+            app:layout_constraintStart_toStartOf="@id/circleTopRight"
+            app:layout_constraintEnd_toEndOf="@id/circleTopRight" />
+
+        <!-- Bottom-Left Rectangle -->
+        <View
+            android:id="@+id/rectangleBottomLeft"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rectangle_green_white_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangleTopLeft"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_weight="1" />
+        <ImageView
+            android:id="@+id/circleBottomLeft"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/circle_green_border"
+            app:layout_constraintTop_toTopOf="@id/rectangleBottomLeft"
+            app:layout_constraintBottom_toBottomOf="@id/rectangleBottomLeft"
+            app:layout_constraintStart_toStartOf="@id/rectangleBottomLeft"
+            app:layout_constraintEnd_toEndOf="@id/rectangleBottomLeft" />
+
+        <ImageView
+            android:id="@+id/arrowUpBottomLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_arrow_downward_24"
+            app:layout_constraintTop_toTopOf="@id/circleBottomLeft"
+            app:layout_constraintBottom_toBottomOf="@id/circleBottomLeft"
+            app:layout_constraintStart_toStartOf="@id/circleBottomLeft"
+            app:layout_constraintEnd_toEndOf="@id/circleBottomLeft" />
+
+        <!-- Bottom-Right Rectangle -->
+        <View
+            android:id="@+id/rectangleBottomRight"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rectangle_green_white_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangleTopRight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_weight="1" />
+        <ImageView
+            android:id="@+id/circleBottomRight"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/circle_green_border"
+            app:layout_constraintTop_toTopOf="@id/rectangleBottomRight"
+            app:layout_constraintBottom_toBottomOf="@id/rectangleBottomRight"
+            app:layout_constraintStart_toStartOf="@id/rectangleBottomRight"
+            app:layout_constraintEnd_toEndOf="@id/rectangleBottomRight" />
+
+        <ImageView
+            android:id="@+id/arrowUpBottomRight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintTop_toTopOf="@id/circleBottomRight"
+            app:layout_constraintBottom_toBottomOf="@id/circleBottomRight"
+            app:layout_constraintStart_toStartOf="@id/circleBottomRight"
+            app:layout_constraintEnd_toEndOf="@id/circleBottomRight" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

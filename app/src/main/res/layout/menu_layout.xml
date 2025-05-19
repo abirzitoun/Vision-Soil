@@ -1,0 +1,57 @@
+<!-- res/layout/menu_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:elevation="8dp">
+
+    <!-- Title with Black Background -->
+<TextView
+android:id="@+id/menu_title"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Menu Option"
+android:textColor="@android:color/white"
+android:textSize="20sp"
+android:padding="16dp"
+android:gravity="center"
+android:background="@android:color/black"/>
+
+    <!-- Connect to Car -->
+<TextView
+android:id="@+id/connect_to_car"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Connect to Car"
+android:textColor="@android:color/black"
+android:textSize="18sp"
+android:padding="16dp"
+android:gravity="center"
+android:background="?attr/selectableItemBackground"/>
+
+    <!-- Settings -->
+<TextView
+android:id="@+id/settings"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Settings"
+android:textColor="@android:color/black"
+android:textSize="18sp"
+android:padding="16dp"
+android:gravity="center"
+android:background="?attr/selectableItemBackground"/>
+
+    <!-- Close App -->
+<TextView
+android:id="@+id/close_app"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Close App"
+android:textColor="@android:color/black"
+android:textSize="18sp"
+android:padding="16dp"
+android:gravity="center"
+android:background="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
